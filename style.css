@@ -1,0 +1,509 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* style */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 375px;
+    /* border-radius: 30px; */
+    font-family: Hanken Grotesk;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 15px 15px hsla(252, 100%, 67%, 0.1)
+}
+
+.kiri {
+    display: inline-block;
+    width: 100%;
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 15%;
+    padding-top: 7%;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+
+.kiri .a {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0%;
+}
+
+.kiri .b {
+    display: flexbox;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: auto;
+    margin-top: 7%;
+    width: 180px;
+    height: 180px;
+    border-radius: 90px;
+    background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    text-align: center;
+    padding-top: 5%;
+    box-sizing: border-box;
+}
+
+.kiri .b .c {
+    margin-top: 20%;
+    font-size: 70px;
+    font-weight: 800;
+}
+
+.kiri .b .d {
+    margin-top: 5%;
+    font-size: 18px;
+}
+
+.kiri .e {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10%;
+    font-weight: 700;
+}
+
+.kiri .f {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.kanan {
+    display: grid;
+    height: 375px;
+    padding-left: 10%;
+    padding-top: 11%;
+    padding-bottom: 11%;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.kanan .g {
+    display: flex;
+    padding: 5%;
+    margin-top: 18px;
+    width: 90%;
+    height: 50px;
+    background-color: hsla(0, 100%, 67%, 0.1);
+    box-sizing: border-box;
+    color: hsl(0, 100%, 67%);
+    align-items: center;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.kanan .g .g1 {
+    width: 100%;
+    margin-left: 5%;
+    display: flex;
+    /* flex-flow: row nowrap; */
+    justify-content: space-between;
+}
+
+#g1a {
+    color: black;
+}
+
+#g1b {
+    font-weight: 800;
+}
+
+.kanan .h {
+    display: flex;
+    padding: 5%;
+    width: 90%;
+    height: 50px;
+    background-color: hsla(39, 100%, 56%, 0.1);
+    box-sizing: border-box;
+    color: hsl(39, 100%, 56%);
+    align-items: center;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.kanan .h .h1 {
+    width: 100%;
+    margin-left: 5%;
+    display: flex;
+    /* flex-flow: row nowrap; */
+    justify-content: space-between;
+}
+
+#h1a {
+    color: black;
+}
+
+#h1b {
+    font-weight: 800;
+}
+
+.kanan .i {
+    display: flex;
+    padding: 5%;
+    width: 90%;
+    height: 50px;
+    background-color: hsla(166, 100%, 37%, 0.1);
+    box-sizing: border-box;
+    color: hsl(166, 100%, 37%);
+    align-items: center;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.kanan .i .i1 {
+    width: 100%;
+    margin-left: 5%;
+    display: flex;
+    /* flex-flow: row nowrap; */
+    justify-content: space-between;
+}
+
+#i1a {
+    color: black;
+}
+
+#i1b {
+    font-weight: 800;
+}
+
+.kanan .j {
+    display: flex;
+    padding: 5%;
+    width: 90%;
+    height: 50px;
+    background-color: hsla(234, 85%, 45%, 0.1);
+    box-sizing: border-box;
+    color: hsl(234, 85%, 45%);
+    align-items: center;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.kanan .j .j1 {
+    width: 100%;
+    margin-left: 5%;
+    display: flex;
+    /* flex-flow: row nowrap; */
+    justify-content: space-between;
+}
+
+#j1a {
+    color: black;
+}
+
+#j1b {
+    font-weight: 800;
+}
+
+.kanan .k .k1 {
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    border: none;
+    height: 50px;
+    width: 90%;
+    border-radius: 25px;
+    margin-top: 20px;
+    /* font-weight: bold; */
+    font-size: 15px;
+    cursor: pointer;
+    transition: box-shadow 0.15s;
+}
+
+.kanan .k .k1:hover {
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.attribution {
+    text-align: center;
+}
+
+
+@media (min-width: 720px) {
+    /* style */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 650px;
+    border-radius: 30px;
+    font-family: Hanken Grotesk;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 10px 10px 25px 25px hsla(252, 100%, 67%, 0.1)
+}
+
+.kiri {
+    display: inline-block;
+    width: 100%;
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 30px;
+    padding: 15%;
+    padding-top: 10%;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+
+.kiri .a {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0%;
+}
+
+.kiri .b {
+    display: flexbox;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20%;
+    width: 180px;
+    height: 180px;
+    border-radius: 90px;
+    background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    text-align: center;
+    padding-top: 5%;
+    box-sizing: border-box;
+}
+
+.kiri .b .c {
+    margin-top: 20%;
+    font-size: 70px;
+    font-weight: 800;
+}
+
+.kiri .b .d {
+    margin-top: 5%;
+    font-size: 18px;
+}
+
+.kiri .e {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10%;
+    font-weight: 700;
+}
+
+.kiri .f {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.kanan {
+    display: grid;
+    padding-left: 10%;
+    padding-top: 11%;
+    padding-bottom: 11%;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.kanan .g {
+    display: flex;
+    padding: 5%;
+    margin-top: 18px;
+    width: 90%;
+    height: 50px;
+    background-color: hsla(0, 100%, 67%, 0.1);
+    box-sizing: border-box;
+    color: hsl(0, 100%, 67%);
+    align-items: center;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.kanan .g .g1 {
+    width: 100%;
+    margin-left: 5%;
+    display: flex;
+    /* flex-flow: row nowrap; */
+    justify-content: space-between;
+}
+
+#g1a {
+    color: black;
+}
+
+#g1b {
+    font-weight: 800;
+}
+
+.kanan .h {
+    display: flex;
+    padding: 5%;
+    width: 90%;
+    height: 50px;
+    background-color: hsla(39, 100%, 56%, 0.1);
+    box-sizing: border-box;
+    color: hsl(39, 100%, 56%);
+    align-items: center;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.kanan .h .h1 {
+    width: 100%;
+    margin-left: 5%;
+    display: flex;
+    /* flex-flow: row nowrap; */
+    justify-content: space-between;
+}
+
+#h1a {
+    color: black;
+}
+
+#h1b {
+    font-weight: 800;
+}
+
+.kanan .i {
+    display: flex;
+    padding: 5%;
+    width: 90%;
+    height: 50px;
+    background-color: hsla(166, 100%, 37%, 0.1);
+    box-sizing: border-box;
+    color: hsl(166, 100%, 37%);
+    align-items: center;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.kanan .i .i1 {
+    width: 100%;
+    margin-left: 5%;
+    display: flex;
+    /* flex-flow: row nowrap; */
+    justify-content: space-between;
+}
+
+#i1a {
+    color: black;
+}
+
+#i1b {
+    font-weight: 800;
+}
+
+.kanan .j {
+    display: flex;
+    padding: 5%;
+    width: 90%;
+    height: 50px;
+    background-color: hsla(234, 85%, 45%, 0.1);
+    box-sizing: border-box;
+    color: hsl(234, 85%, 45%);
+    align-items: center;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.kanan .j .j1 {
+    width: 100%;
+    margin-left: 5%;
+    display: flex;
+    /* flex-flow: row nowrap; */
+    justify-content: space-between;
+}
+
+#j1a {
+    color: black;
+}
+
+#j1b {
+    font-weight: 800;
+}
+
+.kanan .k .k1 {
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    border: none;
+    height: 50px;
+    width: 90%;
+    border-radius: 25px;
+    margin-top: 20px;
+    /* font-weight: bold; */
+    font-size: 15px;
+    cursor: pointer;
+    transition: box-shadow 0.15s;
+}
+
+.kanan .k .k1:hover {
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.attribution {
+    text-align: center;
+}
+}
+
+
+/* clearfix */
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
